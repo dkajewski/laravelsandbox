@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Main styles file
+@import 'main';
+@import 'mobilemax768';
+
+// Sidebar from Admin Panel styles
+@import 'adminSidebar';
+
+// Admin Panel styles
+@import "adminPanel";
+
+// Loading Screen
+@import "loadingScreen";

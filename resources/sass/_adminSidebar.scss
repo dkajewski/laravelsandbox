@@ -1,0 +1,23 @@
+@import "variables";
+@import "../../node_modules/vue-sidebar-menu/src/scss/vue-sidebar-menu";
+
+.v-sidebar-menu {
+  height: calc(100vh - (#{$navbar-height} - 2px));
+  position: fixed !important;
+  top: calc(#{$navbar-height} - 2px);
+
+  .collapse-btn {
+    outline: transparent;
+  }
+
+  .vsm-list {
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .vsm-mobile-bg {
+    height: 50px !important;
+  }
+}

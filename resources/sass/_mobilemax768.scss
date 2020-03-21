@@ -1,0 +1,70 @@
+@import 'variables';
+
+@media (max-width: 768px) {
+  .conversation-container {
+    .mobile-conversation-menu {
+      font-size: 26px;
+    }
+  }
+
+  .conversation-with {
+    height: 70px;
+    padding: 2px 8px;
+  }
+
+  .modal.left .modal-dialog,
+  .modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 85%;
+    height: 100%;
+  }
+
+  .modal.left .modal-content,
+  .modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  /*Left*/
+  .modal.left.fade .modal-dialog {
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+
+  /*Right*/
+  .modal.right.fade .modal-dialog {
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+
+  .mobile-close-left {
+    position: fixed;
+    left: 85%;
+    color: white;
+    font-size: 50px;
+  }
+
+  .messages-overflow {
+    min-height: calc(100vh - #{$conversation-with} - #{$send-message-box-mobile} - #{$navbar-height} - #{$top-messages-menu-mobile-height});
+    max-height: calc(100vh - #{$conversation-with} - #{$send-message-box-mobile} - #{$navbar-height} - #{$top-messages-menu-mobile-height});
+  }
+
+  .send-message {
+    height: $send-message-box-mobile;
+  }
+
+  .conversations {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

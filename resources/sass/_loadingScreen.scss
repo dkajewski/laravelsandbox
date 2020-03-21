@@ -1,0 +1,7 @@
+.vld-overlay {
+  &.is-active {
+    background-color: #646464;
+    z-index: 1100 !important;
+    opacity: 0.9;
+  }
+}
